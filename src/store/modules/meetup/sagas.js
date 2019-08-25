@@ -16,7 +16,7 @@ import {
 
 export function* loadMeetUp() {
   try {
-    const response = yield call(api.get, 'meetups');
+    const response = yield call(api.get, 'organizing');
 
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
